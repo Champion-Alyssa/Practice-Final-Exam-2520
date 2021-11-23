@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@1.1/dist/expanded/luxa.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Create Card</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container-create">
+      <form action="/create" method="POST">
+        <h4>Create A DevCard</h4>
+      <div>
+        <label for="user-name">Your Full Name</label>
+        <input type="text" name="fullName">
+      </div>
+      <div>
+        <label for="about-me">About me</label>
+        <input type="text" name="aboutMe" >
+      </div>
+      <div>
+        <label for="github-url">GitHub URL</label>
+        <input type="url" name="githubUrl">
+      </div>
+      <div>
+        <label for="twitter-url">Twitter URL</label>
+        <input type="url" name="twitterUrl">
+      </div>
+      <div>
+        <label for="twitter-url">Favourite Books</label>
+        <input type="text" name="favoriteBooks">
+      </div>
+      <div>
+        <label for="twitter-url">Favorite Artists</label>
+        <input type="text" name="favoriteArtists">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Create Site</button>
+    </form>
+  </div>
+  </body>
 </html>
